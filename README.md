@@ -41,21 +41,6 @@ SCSS uses BEM naming convention and is split into partials for scalability.
 
 ---
 
-## 🧱 Folder Structure
-```
-├── scss
-│   ├── base
-│   ├── components
-│   ├── layout
-│   ├── pages
-│   └── main.scss
-├── index.html
-├── README.md
-└── .gitignore
-```
-
----
-
 ## 🚀 Getting Started
 To view locally:
 ```bash
