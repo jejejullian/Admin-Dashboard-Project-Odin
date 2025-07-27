@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@mdi/font": "^7.4.47"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
+  },
+  "name": "admin-dashboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

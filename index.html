@@ -1,11 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard - Odin Project</title>
-</head>
-<body>
-    
-</body>
+    <!-- GOOGLE FONT  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <!-- STYLE  -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- MATERIAL ICON  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
+  </head>
+  <body>
+    <div class="dashboard__container">
+      <!-- SIDEBAR SECTION START -->
+      <aside class="sidebar">
+        <!-- Sidebar Header -->
+        <div class="sidebar__header">
+          <div class="sidebar__logo">
+            <span class="mdi mdi-view-dashboard sidebar__logo-icon"></span>
+            <span class="sidebar__logo-text">Dashboard</span>
+          </div>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar__nav">
+          <ul class="sidebar__nav-list">
+            <li class="sidebar__nav-item">
+              <a href="" class="sidebar__nav-link active">
+                <span class="mdi mdi-home sidebar__nav-icon"></span>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="" class="sidebar__nav-link">
+                <span class="mdi mdi-card-account-details-outline sidebar__nav-icon"></span>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="" class="sidebar__nav-link">
+                <span class="mdi mdi-message-reply sidebar__nav-icon"></span>
+                <span>Messages</span>
+              </a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="" class="sidebar__nav-link">
+                <span class="mdi mdi-history sidebar__nav-icon"></span>
+                <span>History</span>
+              </a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="" class="sidebar__nav-link">
+                <span class="mdi mdi-file-multiple sidebar__nav-icon"></span>
+                <span>Tasks</span>
+              </a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="" class="sidebar__nav-link">
+                <span class="mdi mdi-account-group sidebar__nav-icon"></span>
+                <span>Communities</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Sidebar Navigation (Secondary) -->
+          <ul class="sidebar__nav-list sidebar__nav-list--secondary">
+            <li class="sidebar__nav-item">
+              <a href="" class="sidebar__nav-link">
+                <span class="mdi mdi-cog sidebar__nav-icon"></span>
+                <span>Setting</span>
+              </a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="" class="sidebar__nav-link">
+                <span class="mdi mdi-help-box sidebar__nav-icon"></span>
+                <span>Support</span>
+              </a>
+            </li>
+            <li class="sidebar__nav-item">
+              <a href="" class="sidebar__nav-link">
+                <span class="mdi mdi-shield-check sidebar__nav-icon"></span>
+                <span>Privacy</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- SIDEBAR SECTION END -->
+
+      <!-- MAIN CONTENT START  -->
+      <main class="main__content">
+        <header class="header">
+          <!-- Header Top -->
+          <div class="header__top">
+            <div class="header__search-container">
+              <span class="mdi mdi-magnify header__search-icon"></span>
+              <input type="search" class="header__search-input" placeholder="Search..." />
+            </div>
+
+            <div class="header__actions">
+              <button class="header__notification-btn">
+                <span class="mdi mdi-bell-ring header__notification-icon"></span>
+              </button>
+
+              <div class="header__user-info">
+                <img src="./assets/img/user-avatar.jpeg" alt="User Avatar" class="header__user-avatar" />
+                <span class="header__user-name"> Jeje Fadzlin </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Header Bottom -->
+          <div class="header__bottom">
+            <div class="header__greeting">
+              <img src="./assets/img/user-avatar.jpeg" alt="User Avatar" class="header__greeting-avatar" />
+
+              <div class="header__greeting-text">
+                <p class="header__greeting-small">Hi there,</p>
+
+                <h1 class="header__greeting-large">Jeje Fadzlin <a href="https://juliannnfadzlin.vercel.app/resume.html" target="_blank">@Jfdzln</a></h1>
+              </div>
+            </div>
+
+            <div class="header__action-buttons">
+              <button class="header__btn header__btn--primary">New</button>
+              <button class="header__btn header__btn--primary">Upload</button>
+              <button class="header__btn header__btn--primary">Share</button>
+            </div>
+          </div>
+        </header>
+
+        <!-- Content Grid  -->
+        <div class="main__grid">
+          <!-- Projects Section -->
+          <section class="projects">
+            <h2 class="projects__title">Your Projects</h2>
+
+            <div class="projects__grid">
+              <article class="projects__card">
+                <div class="projects__card-content">
+                  <h3 class="projects__card-title">Super Cool Project</h3>
+                  <p class="projects__card-description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                </div>
+
+                <div class="projects__card-actions">
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-star-plus-outline"></span>
+                  </button>
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-eye-plus-outline"></span>
+                  </button>
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-source-branch"></span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="projects__card">
+                <div class="projects__card-content">
+                  <h3 class="projects__card-title">Less Cool Project</h3>
+                  <p class="projects__card-description">
+                    Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.
+                  </p>
+                </div>
+
+                <div class="projects__card-actions">
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-star-plus-outline"></span>
+                  </button>
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-eye-plus-outline"></span>
+                  </button>
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-source-branch"></span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="projects__card">
+                <div class="projects__card-content">
+                  <h3 class="projects__card-title">Impossible App</h3>
+                  <p class="projects__card-description">In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                </div>
+
+                <div class="projects__card-actions">
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-star-plus-outline"></span>
+                  </button>
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-eye-plus-outline"></span>
+                  </button>
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-source-branch"></span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="projects__card">
+                <div class="projects__card-content">
+                  <h3 class="projects__card-title">Easy Peasy App</h3>
+                  <p class="projects__card-description">Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                </div>
+
+                <div class="projects__card-actions">
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-star-plus-outline"></span>
+                  </button>
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-eye-plus-outline"></span>
+                  </button>
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-source-branch"></span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="projects__card">
+                <div class="projects__card-content">
+                  <h3 class="projects__card-title">Ad Blocker</h3>
+                  <p class="projects__card-description">Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                </div>
+
+                <div class="projects__card-actions">
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-star-plus-outline"></span>
+                  </button>
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-eye-plus-outline"></span>
+                  </button>
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-source-branch"></span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="projects__card">
+                <div class="projects__card-content">
+                  <h3 class="projects__card-title">Money Maker</h3>
+                  <p class="projects__card-description">Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                </div>
+
+                <div class="projects__card-actions">
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-star-plus-outline"></span>
+                  </button>
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-eye-plus-outline"></span>
+                  </button>
+                  <button class="projects__card-btn">
+                    <span class="mdi mdi-source-branch"></span>
+                  </button>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Sidebar content  -->
+          <aside class="content__sidebar">
+            <!-- Announcements  -->
+            <section class="announcements">
+              <h2 class="announcements__title">Announcements</h2>
+
+              <div class="announcements__card">
+                <article class="announcements__card-content">
+                  <h3 class="announcements__card-title">Site Maintenance</h3>
+                  <p class="announcements__card-text">Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                </article>
+                <hr class="announcements__card-divider" />
+
+                <article class="announcements__card-content">
+                  <h3 class="announcements__card-title">Community Share Day</h3>
+                  <p class="announcements__card-text">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                </article>
+                <hr class="announcements__card-divider" />
+
+                <article class="announcements__card-content">
+                  <h3 class="announcements__card-title">Updated Privacy Policy</h3>
+                  <p class="announcements__card-text">Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                </article>
+              </div>
+            </section>
+
+            <!-- Trending  -->
+            <section class="trending">
+              <h2 class="trending__title">Trending</h2>
+              <div class="trending__card">
+                <div class="trending__card-item">
+                  <img class="trending__card-avatar" src="./assets/img/user-avatar.jpeg" alt="@tegan" />
+                  <div class="trending__info">
+                    <p class="trending__info-username">@tegan</p>
+                    <p class="trending__info-project">World peace Builder</p>
+                  </div>
+                </div>
+                <div class="trending__card-item">
+                  <img class="trending__card-avatar" src="./assets/img/user-avatar.jpeg" alt="@morgan" />
+                  <div class="trending__info">
+                    <p class="trending__info-username">@morgan</p>
+                    <p class="trending__info-project">Super Cool Project</p>
+                  </div>
+                </div>
+                <div class="trending__card-item">
+                  <img class="trending__card-avatar" src="./assets/img/user-avatar.jpeg" alt="@kendall" />
+                  <div class="trending__info">
+                    <p class="trending__info-username">@kendall</p>
+                    <p class="trending__info-project">Life Changing App</p>
+                  </div>
+                </div>
+                <div class="trending__card-item">
+                  <img class="trending__card-avatar" src="./assets/img/user-avatar.jpeg" alt="@alex" />
+                  <div class="trending__info">
+                    <p class="trending__info-username">@alex</p>
+                    <p class="trending__info-project">No Traffic Maker</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </main>
+
+      <!-- MAIN CONTENT END -->
+    </div>
+  </body>
 </html>

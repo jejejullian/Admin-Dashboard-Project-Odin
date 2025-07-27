@@ -1,0 +1,14 @@
+# Node.js packages
+node_modules/
+
+# VS Code settings
+.vscode/
+
+# Sass/SCSS cache
+.sass-cache/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
